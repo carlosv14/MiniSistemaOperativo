@@ -1,0 +1,32 @@
+#include<stdio.h>
+void putInMemory (int segment, int address, char character);
+void writeHelloWorld(char * helloWorld);
+long int calculatePosition(int row,int column);
+
+long int calculatePosition(int row,int column){
+long int decimalNumber = 80*row; 
+long int quotient;
+int temp = 0,i=0;
+char hexadecimalNumber[100];
+
+    quotient = decimalNumber;
+
+    while(quotient>0){
+        
+  }
+
+return decimalNumber;
+}
+
+
+void writeHelloWorld(char * helloWorld){
+int i = 0;
+for(i = 0; helloWorld[i] != '\0'; i++) {
+	putInMemory(0xB000, 0x8140, helloWorld[i]);  
+	putInMemory(0xB000, 0x8141, 0x7); 
+  }
+}
+int main(){
+  writeHelloWorld('A');
+return 0;
+}
